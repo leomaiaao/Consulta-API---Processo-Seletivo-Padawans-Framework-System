@@ -1,0 +1,114 @@
+.containertabs {
+    display: -webkit-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.componentes {
+    border-radius: 3rem;
+    box-shadow: -5px -5px -10px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.tabs {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: auto;
+    height: 3rem;
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+    display: flex;
+    align-items: bottom;
+    position: relative;
+}
+
+.tabs input {
+    display: none;
+}
+
+.tabs>input:checked+label>a {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color: rgba(241, 53, 53, 0.904);
+}
+
+.tab___1 a,
+.tab___2 a,
+.tab___3 a,
+.tab___4 a {
+    width: 6.8rem;
+    height: 3.6rem;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: gray;
+    transition: all 0.5s ease;
+}
+
+.tab___1 a:hover .tab___2 a:hover .tab___3 a:hover .tab___4 a:hover {
+    color: red;
+}
+
+.tab___color {
+    position: absolute;
+    height: 3.4rem;
+    width: 6.8rem;
+    margin-left: 0.3rem;
+    border-radius: 0.8rem;
+    box-shadow: inset -2px -2px 6px rgba( 255, 255, 255, 0.1), inset rgba( 0, 0, 0, 0.8);
+    pointer-events: none;
+}
+
+#tab-1 a:checked~.tab___color {
+    transform: translateX(0);
+    transition: transform 0.3s cubic-bezier( 0.645, 0.045, 0.0355, 1);
+}
+
+#tab-2 a:checked~.tab___color {
+    transform: translateX(6.8rem);
+    transition: transform 0.3s cubic-bezier( 0.645, 0.045, 0.0355, 1);
+}
+
+#tab-3 a:checked~.tab___color {
+    transform: translateX(13.6rem);
+    transition: transform 0.3s cubic-bezier( 0.645, 0.045, 0.0355, 1);
+}
+
+#tab-4 a:checked~.tab___color {
+    transform: translateX(19.4rem);
+    transition: transform 0.3s cubic-bezier( 0.645, 0.045, 0.0355, 1);
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgba(0, 123, 255, .25)
+}
+
+.btn-secondary:focus {
+    box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5)
+}
+
+.close:focus {
+    box-shadow: 0 0 0 0rem rgba(108, 117, 125, .5)
+}
+
+body {
+    background: #e9e8e5;
+}
+
+#home {
+    background: #e9e8e5;
+    color: rgb(90, 90, 90);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.margens {
+    margin-top: 8% !important;
+    margin-left: 24% !important;
+}
