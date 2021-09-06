@@ -91,7 +91,7 @@ if ($nome == null || $nome == "") {
                     <div class="row align-items-right">
                         <div class="col-md-6 d-flex">
                             <div class="align-items-right">
-                                <h2 class="  display-3 ">Consulte aquivos de forma Simples!</h2>
+                                <h2 class="  display-3 ">Consulte arquivos de forma Simples!</h2>
                             </div>
                         </div>
                         <div class="col-6 d-none d-md-block">
